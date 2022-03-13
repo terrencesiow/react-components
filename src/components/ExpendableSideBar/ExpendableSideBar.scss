@@ -1,0 +1,66 @@
+.sidebar_container {
+     position: fixed;
+     width: 20%;
+     height: 100%;
+     background-color: transparent;
+
+     .sidebar {
+          background: rgba(0, 0, 0, 0.6);
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 120;
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.2s ease-in-out;
+
+          &--hide {
+               opacity: 0;
+               visibility: hidden;
+          }
+
+          &__content {
+               // background: #fff;
+               height: 100%;
+               padding: 2rem;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+               transform: translateY(0);
+               transition: all 0.2s ease-in-out;
+
+               &--hide {
+                    transform: translateX(-100%);
+               }
+          }
+     }
+
+     .button {
+          position: absolute;
+          top: 50%;
+          right: -5%;
+          width: 2rem;
+          height: 3rem;
+          background: #fff;
+          z-index: 121;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+
+          // &:hover {
+          //      background: #f0f0f0;
+          // }
+
+          // &:active {
+          //      background: #f0f0f0;
+          // }
+
+          &--move {
+               right: initial;
+          }
+     }
+}

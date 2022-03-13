@@ -1,0 +1,2 @@
+export const TOGGLE_EXP_SIDE_BAR = "TOGGLE_EXP_SIDE_BAR";
+export const CLOSE_SIDEBAR = "CLOSE_SIDEBAR";
